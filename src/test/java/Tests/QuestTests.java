@@ -68,7 +68,6 @@ public class QuestTests {
 
     @AfterClass
     public static void teardown() {
-        System.out.println("test close");
         driver.quit();
     }
 

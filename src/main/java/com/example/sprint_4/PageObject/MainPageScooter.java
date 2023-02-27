@@ -62,14 +62,4 @@ public class MainPageScooter {
         return driver.findElements(LIST_ANSWER);
     }
 
-    ///////////////////////////
-//    private WebDriver driver;
-//    // Кнопка "Заказать"
-//    private By orderButton = By.className("Button_Button__ra12g Button_UltraBig__UU3Lp");
-//    // Элемент номер 1 из списка вопросов
-//    private By questionList = By.id("accordion__heading-0");
-//
-//    public MainPageScooter(WebDriver driver) {
-//        this.driver = driver;
-//    }
 }

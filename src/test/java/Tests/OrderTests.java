@@ -64,8 +64,6 @@ public class OrderTests {
         objProfile = new Profile(driver);
         objService = new Service(driver);
 
-        System.out.println("test start");
-
         objService.inInputWebsite()
                 .click(objHomePage.getCookie())
                 .waitPageElement(objHomePage.getImage());
@@ -91,7 +89,6 @@ public class OrderTests {
 
     @After
     public void teardown() {
-        System.out.println("test close");
         driver.quit();
 
     }
