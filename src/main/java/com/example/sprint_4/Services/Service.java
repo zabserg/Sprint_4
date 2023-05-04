@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class Service {
 
     public MainPageScooter objHomePage;
@@ -48,6 +50,7 @@ public class Service {
     // Метод производит ожидание появления выбранного элемента
     public Service waitPageElement(By element) {
         new WebDriverWait(driver, 1).until(ExpectedConditions.visibilityOfElementLocated(element));
+//        new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOfElementLocated(element));
         return this;
     }
 
