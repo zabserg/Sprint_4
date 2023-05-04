@@ -57,6 +57,7 @@ public class OrderTests {
 
     @Before
     public void setUpOrder() {
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/driver/chromedriver.exe");
         driver = new ChromeDriver();
 
         objOrderPage = new OrderPageScooter(driver);

@@ -48,7 +48,7 @@ public class QuestTests {
     //Выполнится окрытие браузера и вход на сайт, перемещение к блоку вопросов
     @BeforeClass
     public static void globalSetup() {
-
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/driver/chromedriver.exe");
         driver = new ChromeDriver();
         objService = new Service(driver);
         objHomePage = new MainPageScooter(driver);
